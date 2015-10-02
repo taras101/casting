@@ -98,6 +98,10 @@ html {
 }
 body{
   font-family: ProximaNova-Light;
+  background: -webkit-linear-gradient(#f2f3f4, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f2f3f4, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f2f3f4, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f2f3f4, #fff); /* Standard syntax (must be last) */
 }
 a::selection{
 
@@ -105,12 +109,16 @@ a::selection{
     
 }
 header {
-  height: 2em;
+  height: 1em;
   font-size: 1.3em;
   background-color: #54abd1;
   color:#fff;
   font-family: ProximaNova-Regular;
   line-height: 2;
+  padding-bottom: 1em;
+}
+header.open{
+  margin-bottom: 24%;
 }
 .main-wrap{
   max-width: 960px;
@@ -126,12 +134,24 @@ header {
 
 .pure-menu-link:hover, .pure-menu-link:focus {
   background-color: transparent;
-  color: #003366;
+  color: #0f4254;
 }
 .pure-menu-list{
-  padding-left: 8em;
   font-size: 0.7em;
-  
+}
+.custom-wrapper.open .pure-menu-list{
+  top: -33px;
+
+}
+@media (max-width: 40em) {
+
+  section{
+    font-size: 3vw;
+  }
+  .title{
+    width: 80% !important;
+  }
+
 }
 
 .logo-text {
@@ -148,22 +168,75 @@ header {
   width: 45px;
   margin: 3em 0 1em 7.4em;
 }
-.section1{
+section{
   display: -webkit-flex; /* Safari */
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items:center;
-  color: #000;
-  height: 480px;
   text-align: center;
-  padding: 0 7.5em;
+  width: 100%
+}
+.section1{
+  color: #0f4254;
+  background-color: #fff;
+  z-index: 3;
 }
 .section1 .title{
   font-size: 3.5em;
   letter-spacing: 0.1em;
 }
-
-
+.section2 .title{
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+}
+.title {
+  font-size: 1.5em;
+  width: 66%;
+  margin: 2em auto;
+  
+}
+.section2{
+  color: #fff;
+  background-color: #54abd1;
+}
+.section3{
+  color: #fff;
+  background-color: #7cbcd9;
+}
+.section4{
+  color: #fff;
+  background-color: #51a7cc;
+}
+.section5{
+  color: #fff;
+  background-color: #7abad6;
+}
+.section6{
+  color: #fff;
+  background-color: #4ea3c8;
+}.section7{
+  color: #fff;
+  background-color: #77b7d2;
+}
+.section8{
+  color: #fff;
+  background-color: #4b9fc3;
+}
+.section9{
+  color: #0f4254;
+  background-color: #f2f3f3;
+}
+.section10{
+  background-color: #fff;
+  height: 4em;
+}
+.button-form{
+  width: 66%;
+  border: 1px solid #76bfdf;
+  border-radius: 6px;
+  color: #76bfdf;
+}
 
 
 
