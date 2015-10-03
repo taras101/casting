@@ -36,3 +36,13 @@ document.getElementById('toggle').addEventListener('click', function (e) {
 
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 })(this, this.document);
+
+$(".button-title").click(function(){
+    $(".folding").show();
+});
+$(".logo-close").click(function(){
+    $(".folding").hide();
+});
+
+
+

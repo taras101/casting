@@ -141,7 +141,9 @@ header.open{
 }
 .custom-wrapper.open .pure-menu-list{
   top: -33px;
-
+}
+.pure-menu-horizontal .pure-menu-list {
+  padding-right: 20px;
 }
 @media (max-width: 40em) {
 
@@ -162,11 +164,22 @@ header.open{
 
 }
 .logo-dots{
-  background: url("img/logo-dots@2x.png") no-repeat;
+  background: url("logo-dots@2x.png") no-repeat;
   background-size: 45px 45px;
   height: 45px;
   width: 45px;
   margin: 3em 0 1em 7.4em;
+}
+.logo-close{
+  background: url("../img/close@2x.png") no-repeat;
+  background-size: 27px 27px;
+  height: 27px;
+  width: 27px;
+  float: right;
+  position: relative;
+  top: 28px;
+  right: 22px;
+  cursor: pointer;
 }
 section{
   display: -webkit-flex; /* Safari */
@@ -226,6 +239,12 @@ section{
 .section9{
   color: #0f4254;
   background-color: #f2f3f3;
+  padding-top: 5em;
+  padding-bottom: 6em;
+}
+.section9 .title{
+  margin: 1em auto;
+  font-family: ProximaNova-Regular;
 }
 .section10{
   background-color: #fff;
@@ -233,15 +252,124 @@ section{
 }
 .button-form{
   width: 66%;
+  height: 100%;
   border: 1px solid #76bfdf;
-  border-radius: 6px;
+  border-radius: 25px;
   color: #76bfdf;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  background: -webkit-linear-gradient(#fff, #e8e9ea); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #e8e9ea); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff, #e8e9ea); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #e8e9ea); /* Standard syntax (must be last) */
+
+}
+#comment{
+  height: 4em;
+  line-height: 4;
+}
+#submit{
+  text-align: center;
+}
+.button-title{
+  margin: auto;
+  padding: 0.7em;
+  cursor: pointer;
+}
+*::-webkit-input-placeholder {
+  color: #76bfdf;
+  font-size: .5em;
+  line-height: 2;
+  text-indent: 10px;
+}
+input{
+  border-radius: 8px;
+  border: 1px solid #76bfdf;
+  width: 80%;
 }
 
+form div{
+  margin: 0.5em auto;
+}
+form div div {
+  border-radius: 8px;
+  border: 1px solid #76bfdf;
+  width: 80%;
+  height: 1em;
+  line-height: 1;
+  text-indent: 10px;
+  background-color: #fff;
+}
+form div div a {
+  text-decoration: none;
+  color: #76bfdf;
+  font-size: .5em;
+}
+.folding {
+  display: none;
+}
 
+footer{
+  height: 6em;
+  background-color: #fff;
+}
 
-
-
+footer p a {
+  text-indent: -9999px;
+  margin: 2em auto;
+  width: 24px;
+  height: 23px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: calc(50% - 12px);
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  opacity:0.3;
+  filter:alpha(opacity=30);
+}
+footer p a:hover {
+  opacity:1;
+  filter:alpha(opacity=100);
+  width: 162px;
+}
+footer a .credit-small {
+  width: 24px;
+  height: 23px;
+  display: block;
+  background: url('../images/credit-v-blue.png') no-repeat left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 600;
+}
+footer a .credit-full {
+  width: 128px;
+  height: 18px;
+  display: block;
+  background: url('../images/credit-text.png') no-repeat right;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  z-index: 500;
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+footer a:hover .credit-full {
+  opacity:1;
+  filter:alpha(opacity=100);
+}
 
 
 
