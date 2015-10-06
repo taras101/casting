@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 <!--<![endif]-->
 
-.custom-wrapper {
+.custom-wrapper{
     background-color: #ffd390;
     margin-bottom: 1em;
     -webkit-font-smoothing: antialiased;
@@ -16,7 +16,6 @@
     -ms-transition: height 0.5s;
     transition: height 0.5s;
 }
-
 .custom-wrapper.open .pure-menu-link{
   background-color: #fff;
   color:#000;
@@ -25,12 +24,10 @@
 .custom-wrapper.open .pure-menu-list{
   padding-left: 0;
 }
-
-.custom-menu-3 {
+.custom-menu-3{
     text-align: right;
 }
-
-.custom-toggle {
+.custom-toggle{
     width: 34px;
     height: 34px;
     display: block;
@@ -40,8 +37,7 @@
     float: right;
     display: none;
 }
-
-.custom-toggle .bar {
+.custom-toggle .bar{
     background-color: #fff;
     display: block;
     width: 20px;
@@ -55,48 +51,45 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
-
-.custom-toggle .bar:nth-child(1) {
+.custom-toggle .bar:nth-child(1){
     -webkit-transform: translateY(-6px);
     -moz-transform: translateY(-6px);
     -ms-transform: translateY(-6px);
     transform: translateY(-6px);
 }
-.custom-toggle .bar:nth-child(2) {
+.custom-toggle .bar:nth-child(2){
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
 }
-.custom-toggle .bar:nth-child(3) {
+.custom-toggle .bar:nth-child(3){
     -webkit-transform: translateY(6px);
     -moz-transform: translateY(6px);
     -ms-transform: translateY(6px);
     transform: translateY(6px);
 }
-
-.custom-toggle.x .bar {
+.custom-toggle.x .bar{
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-.custom-toggle.x .bar:first-child {
+.custom-toggle.x .bar:first-child{
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
-@media (max-width: 47.999em) {
-
+@media (max-width: 47.999em){
     .custom-menu-3 {
         text-align: left;
+         display: none;
     }
-
+    .main-wrap .open .custom-menu-3{
+      display: block;
+    }
     .custom-toggle {
         display: block;
     }
-
 }

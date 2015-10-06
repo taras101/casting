@@ -104,11 +104,9 @@ body{
   background: linear-gradient(#f2f3f4, #fff); /* Standard syntax (must be last) */
 }
 a::selection{
-
   background: none;
-    
 }
-header {
+header{
   height: 1em;
   font-size: 1.3em;
   background-color: #54abd1;
@@ -131,7 +129,6 @@ header.open{
   color: #fff;
   padding:0 0.5em;
 }
-
 .pure-menu-link:hover, .pure-menu-link:focus {
   background-color: transparent;
   color: #0f4254;
@@ -145,26 +142,12 @@ header.open{
 .pure-menu-horizontal .pure-menu-list {
   padding-right: 20px;
 }
-@media (max-width: 40em) {
-
-  section{
-    font-size: 3vw;
-  }
-  .title{
-    width: 80% !important;
-  }
-
-}
-
-.logo-text {
+.logo-text{
   margin-left: 2em;
   letter-spacing: 0.2em;
 }
-.logo-dots-container{
-
-}
 .logo-dots{
-  background: url("logo-dots@2x.png") no-repeat;
+  background: url("../img/logo-dots@2x.png") no-repeat;
   background-size: 45px 45px;
   height: 45px;
   width: 45px;
@@ -203,11 +186,10 @@ section{
   font-size: 2.5em;
   letter-spacing: 0.1em;
 }
-.title {
+.title{
   font-size: 1.5em;
   width: 66%;
   margin: 2em auto;
-  
 }
 .section2{
   color: #fff;
@@ -262,7 +244,6 @@ section{
   background: -o-linear-gradient(#fff, #e8e9ea); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#fff, #e8e9ea); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#fff, #e8e9ea); /* Standard syntax (must be last) */
-
 }
 #comment{
   height: 4em;
@@ -313,7 +294,6 @@ footer{
   height: 6em;
   background-color: #fff;
 }
-
 footer p a {
   text-indent: -9999px;
   margin: 2em auto;
@@ -344,7 +324,7 @@ footer a .credit-small {
   width: 24px;
   height: 23px;
   display: block;
-  background: url('../images/credit-v-blue.png') no-repeat left;
+  background: url('../img/credit-v-blue.png') no-repeat left;
   position: absolute;
   top: 0;
   left: 0;
@@ -354,7 +334,7 @@ footer a .credit-full {
   width: 128px;
   height: 18px;
   display: block;
-  background: url('../images/credit-text.png') no-repeat right;
+  background: url('../img/credit-text.png') no-repeat right;
   position: absolute;
   top: 3px;
   right: 0;
@@ -370,11 +350,15 @@ footer a:hover .credit-full {
   opacity:1;
   filter:alpha(opacity=100);
 }
-
-
-
-
-
+@media (max-width: 40em) {
+  section{
+    font-size: 3vw;
+  }
+  .title{
+    width: 80% !important;
+  }
+  
+}
 
 
 
